@@ -4,7 +4,21 @@
 	},
 	"language": "Solidity",
 	"output": {
-		"abi": [],
+		"abi": [
+			{
+				"inputs": [],
+				"name": "addnew",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "pure",
+				"type": "function"
+			}
+		],
 		"devdoc": {
 			"kind": "dev",
 			"methods": {},
@@ -33,11 +47,11 @@
 	},
 	"sources": {
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0x37d5720941e279c21b808b489bfe335bf857ef66c2280f5787dab460bfabe546",
+			"keccak256": "0x0bb71e31f09c08d2a94ca4a585327a62d597f81172d6fc27a16ff0abd4cb5fd3",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://5dbfe6fd05ef887d631edc7e7b0f4d063583c9eeca11f33f35d1a7509694cdc5",
-				"dweb:/ipfs/QmakoBk16hJiV36i3sL71GyqMyBUkFXXyhttHwP4m96FFH"
+				"bzz-raw://92bbf74e620858273c758e26cb07a391181ca18cf05d22a9aadb7facb8b76f94",
+				"dweb:/ipfs/QmUNtkLGuUCNUokkrFdGc9bZPCeUQaoKpFRZny2MGuzgvu"
 			]
 		}
 	},
