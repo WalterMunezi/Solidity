@@ -7,7 +7,20 @@
 		"abi": [
 			{
 				"inputs": [],
-				"name": "addnew",
+				"name": "createSimpleStorageContract",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					}
+				],
+				"name": "sfRetrieve",
 				"outputs": [
 					{
 						"internalType": "uint256",
@@ -15,7 +28,44 @@
 						"type": "uint256"
 					}
 				],
-				"stateMutability": "pure",
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageIndex",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_simpleStorageNumber",
+						"type": "uint256"
+					}
+				],
+				"name": "sfStore",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"name": "simpleStorageArray",
+				"outputs": [
+					{
+						"internalType": "contract SimpleStorage",
+						"name": "",
+						"type": "address"
+					}
+				],
+				"stateMutability": "view",
 				"type": "function"
 			}
 		],
@@ -46,12 +96,20 @@
 		"remappings": []
 	},
 	"sources": {
+		"contracts/SimpleStorage.sol": {
+			"keccak256": "0xb628ee08611b94e85ce3a53f5573c94b4980234d000db8258bf6128d1dfda6a3",
+			"license": "GPL -3",
+			"urls": [
+				"bzz-raw://17076d7400976436493c45684b2628aed33327eb5a25b5073dde07998993f200",
+				"dweb:/ipfs/QmbMthp6baJPBK6bMt31dwbyZCKa3BifwuGH796YSfYWEN"
+			]
+		},
 		"contracts/StorageFactory.sol": {
-			"keccak256": "0x0bb71e31f09c08d2a94ca4a585327a62d597f81172d6fc27a16ff0abd4cb5fd3",
+			"keccak256": "0x2d83c7e805561b5f6ba4d4b54418eb32318ddbf44a0c2fb81ad46f43782cccb5",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://92bbf74e620858273c758e26cb07a391181ca18cf05d22a9aadb7facb8b76f94",
-				"dweb:/ipfs/QmUNtkLGuUCNUokkrFdGc9bZPCeUQaoKpFRZny2MGuzgvu"
+				"bzz-raw://644768b2ef88156cb418d1b201009351d48122066eda9d3e8b33f14ecc4de511",
+				"dweb:/ipfs/QmNkPWo2xVrB3dNfbYkkSkVEep5HUcXdwJckNmgP4TLWsd"
 			]
 		}
 	},
